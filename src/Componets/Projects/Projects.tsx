@@ -4,26 +4,44 @@ import { useTheme } from "../../Context/ThemeContext";
 const Projects: React.FC = () => {
   const { isDarkMode } = useTheme();
 
+
+  const HandleCVDownload = () =>{
+    try {
+      console.log("hellp")
+        const cvUrl = "/Mohammed Noorul Ameen.pdf";
+        const link = document.createElement("a");
+        link.href = cvUrl;
+        link.download = "Mohammed Noorul Ameen.pdf";
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+      
+    } catch (error) {
+      console.log("not working")
+    }
+  }
+
   return (
     <div>
       <div>
-        <h1 className="font-serif text-lg sm:text-xl md:text-2xl font-semibold mt-10 sm:mt-20 pl-5 md:pl-10 lg:pl-50">
-          Projects
+        <h1 className="font-serif text-lg sm:text-xl md:text-2xl font-semibold mt-5 sm:mt-10 pl-5 md:pl-10 lg:pl-50">
+        Highlights
         </h1>
         <hr className="w-3/4 h-0.5 bg-gray-900 ml-5 md:ml-10 lg:ml-50 mt-2" />
 
         {/* Links */}
         <div className="flex flex-wrap gap-4 mt-8 pl-5 md:pl-10 lg:pl-55">
           {[
-            { name: "Instagram", url: "https://www.instagram.com/noorulameen___/" },
-            { name: "GitHub", url: "https://github.com/mohammednoorulameen" },
-            { name: "LinkedIn", url: "https://www.linkedin.com/in/mohammed-noorul-ameen-n5445n/" },
-          ].map(({ name, url }) => (
+            { name: "Download CV", onClick : HandleCVDownload},
+            { name: "Visit Projects", url: "" },
+            { name: "Skills", url: "/" },
+          ].map(({ name, url, onClick }) => (
             <a
               key={name}
-              href={url}
-              target="_blank"
-              rel="noopener noreferrer"
+              href={url || "#"}
+              onClick={onClick || undefined}
+              target={url ? "_blank" : undefined}
+              rel={url ? "noopener noreferrer" : undefined}
               className={`border-2 px-4 py-2 rounded font-serif font-black transition duration-300 ${
                 isDarkMode
                   ? "border-white bg-black text-white hover:bg-white hover:text-black"

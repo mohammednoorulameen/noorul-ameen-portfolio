@@ -54,7 +54,7 @@ const About: React.FC = () => {
         <hr className="w-full h-0.5 bg-gray-900 mt-5" />
 
         {/* Footer Section */}
-        <div className="mt-3 pb-10">
+        <div className="mt-3 pb-3">
           <h1 className="font-serif text-center text-gray-500">
             © 2025 Mohammed Noorul Ameen
           </h1>

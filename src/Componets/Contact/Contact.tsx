@@ -18,6 +18,7 @@ const Contact: React.FC = () => {
             { name: "Instagram", url: "https://www.instagram.com/noorulameen___/" },
             { name: "GitHub", url: "https://github.com/mohammednoorulameen" },
             { name: "LinkedIn", url: "https://www.linkedin.com/in/mohammed-noorul-ameen-n5445n/" },
+            { name: "Email", url: "mailto:noorulameen8606@gmail.com?subject=Hello&body=I would like to connect with you" },
           ].map(({ name, url }) => (
             <a
               key={name}
