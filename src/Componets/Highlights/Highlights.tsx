@@ -1,7 +1,8 @@
 import React from "react";
 import { useTheme } from "../../Context/ThemeContext";
+import { Link } from "react-router-dom";
 
-const Projects: React.FC = () => {
+const Highlights: React.FC = () => {
   const { isDarkMode } = useTheme();
 
 
@@ -33,14 +34,14 @@ const Projects: React.FC = () => {
         <div className="flex flex-wrap gap-4 mt-8 pl-5 md:pl-10 lg:pl-55">
           {[
             { name: "Download CV", onClick : HandleCVDownload},
-            { name: "Visit Projects", url: "" },
-            { name: "Skills", url: "/" },
+            { name: "Visit Projects", url: "/projects" },
+            { name: "Visit Skills", url: "/skills" },
           ].map(({ name, url, onClick }) => (
-            <a
+            <Link
               key={name}
-              href={url || "#"}
+              to={url || "#"}
               onClick={onClick || undefined}
-              target={url ? "_blank" : undefined}
+              // target={url ? "_blank" : undefined}
               rel={url ? "noopener noreferrer" : undefined}
               className={`border-2 px-4 py-2 rounded font-serif font-black transition duration-300 ${
                 isDarkMode
@@ -49,7 +50,7 @@ const Projects: React.FC = () => {
               }`}
             >
               {name}
-            </a>
+            </Link>
           ))}
         </div>
       </div>
@@ -57,4 +58,4 @@ const Projects: React.FC = () => {
   );
 };
 
-export default Projects;
+export default Highlights;

@@ -1,5 +1,6 @@
 import React from "react";
 import { useTheme } from "../../Context/ThemeContext";
+import { Link } from "react-router-dom";
 
 const Contact: React.FC = () => {
   const { isDarkMode } = useTheme();
@@ -18,11 +19,11 @@ const Contact: React.FC = () => {
             { name: "Instagram", url: "https://www.instagram.com/noorulameen___/" },
             { name: "GitHub", url: "https://github.com/mohammednoorulameen" },
             { name: "LinkedIn", url: "https://www.linkedin.com/in/mohammed-noorul-ameen-n5445n/" },
-            { name: "Email", url: "mailto:noorulameen8606@gmail.com?subject=Hello&body=I would like to connect with you" },
+            { name: "Email",  url: "mailto:noorulameen8606@gmail.com?subject=Hello&body=I would like to connect with you"},
           ].map(({ name, url }) => (
-            <a
+            <Link
               key={name}
-              href={url}
+              to={url}
               target="_blank"
               rel="noopener noreferrer"
               className={`border-2 px-4 py-2 rounded font-serif font-black transition duration-300 ${
@@ -32,7 +33,7 @@ const Contact: React.FC = () => {
               }`}
             >
               {name}
-            </a>
+            </Link>
           ))}
         </div>
       </div>

@@ -31,7 +31,7 @@ const Navbar: React.FC = () => {
       </div>
 
       {/* Center content section */}
-      <div className="mt-5 text-center">
+      <div className="mt-2 text-center">
         <h1 className="text-3xl md:text-4xl font-bold font-serif">
           Mohammed Noorul Ameen
         </h1>
