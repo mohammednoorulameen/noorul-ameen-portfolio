@@ -20,7 +20,7 @@ const Projects: React.FC = () => {
       id: 2,
       title: "UI design a Website",
       description: "UI-UX design ",
-      liveLink: "https://lnkd.in/gcz7YvyA",
+      liveLink: "https://mohammednoorulameen.github.io/tayota-responsive/",
       sourceCode: "https://github.com/mohammednoorulameen/tayota",
       smallImage: `${toyotaclone}`, // Add small image URL
     },
