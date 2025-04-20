@@ -1,9 +1,9 @@
 import React from "react";
 import { useTheme } from "../../Context/ThemeContext";
+// import VoiceAssistant from "../VoiceAssistant/VoiceAssistant";
 
 const Navbar: React.FC = () => {
   const { isDarkMode, toggleTheme } = useTheme();
-
   return (
     <div>
       {/* Toggle Switch Section */}
@@ -28,6 +28,7 @@ const Navbar: React.FC = () => {
             } rounded-full left-1 top-1 transition-transform duration-300 peer-checked:translate-x-5`}
           ></div>
         </label>
+        {/* <VoiceAssistant /> */}
       </div>
 
       {/* Center content section */}

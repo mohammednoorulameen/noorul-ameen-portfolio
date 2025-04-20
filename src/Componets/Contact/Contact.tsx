@@ -12,19 +12,24 @@ const Contact: React.FC = () => {
           Connect with Me
         </h1>
         <hr className="w-3/4 h-0.5 bg-gray-900 ml-5 md:ml-10 lg:ml-50 mt-2" />
-
+          
         {/* Links */}
         <div className="flex flex-wrap gap-4 mt-8 pl-5 md:pl-10 lg:pl-55">
           {[
             { name: "Instagram", url: "https://www.instagram.com/noorulameen___/" },
             { name: "GitHub", url: "https://github.com/mohammednoorulameen" },
             { name: "LinkedIn", url: "https://www.linkedin.com/in/mohammed-noorul-ameen-n5445n/" },
-            { name: "Email",  url: "mailto:noorulameen8606@gmail.com?subject=Hello&body=I would like to connect with you"},
+            // { name: "Email",  url: "mailto:noorulameen8606@gmail.com?subject=Hello&body=I would like to connect with you"},
+            {
+  name: "Email",
+  url: "mailto:noorulameen8606@gmail.com?subject=Hello&body=I%20would%20like%20to%20connect%20with%20you",
+}
+
           ].map(({ name, url }) => (
             <Link
               key={name}
               to={url}
-              target="_blank"
+              // target="_blank"
               rel="noopener noreferrer"
               className={`border-2 px-4 py-2 rounded font-serif font-black transition duration-300 ${
                 isDarkMode
