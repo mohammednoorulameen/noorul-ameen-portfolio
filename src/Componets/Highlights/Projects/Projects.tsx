@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "../../Navbar/Navbar";
 import Ebook from '../../../assets/E-Book.png';
 import toyotaclone from '../../../assets/toyota clone.jpeg';
+import Allensonly_clone from '../../../assets/Allensonly_clone.png'
 import { useTheme } from '../../../Context/ThemeContext';
 
 const Projects: React.FC = () => {
@@ -23,6 +24,14 @@ const Projects: React.FC = () => {
       liveLink: "https://mohammednoorulameen.github.io/tayota-responsive/",
       sourceCode: "https://github.com/mohammednoorulameen/tayota",
       smallImage: `${toyotaclone}`, // Add small image URL
+    },
+    {
+      id: 3,
+      title: "UI design a Website",
+      description: "UI-UX design ",
+      liveLink: "https://mohammednoorulameen.github.io/Allensolly/",
+      sourceCode: "https://github.com/mohammednoorulameen/Allensolly",
+      smallImage: `${Allensonly_clone}`, // Add small image URL
     },
   ];
 
@@ -77,3 +86,6 @@ const Projects: React.FC = () => {
 };
 
 export default Projects;
+
+
+
