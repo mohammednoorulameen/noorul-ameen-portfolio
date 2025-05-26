@@ -12,7 +12,8 @@ import {
   FaPalette,
   FaRocket,
   FaPaperPlane,
-} from "react-icons/fa"; 
+  FaHtml5,
+} from "react-icons/fa";
 import Navbar from "../../Navbar/Navbar";
 import { useTheme } from "../../../Context/ThemeContext";
 
@@ -24,14 +25,16 @@ const Skills: React.FC = () => {
       items: [
         { name: "React", icon: <FaReact /> },
         { name: "Node.js", icon: <FaNodeJs /> },
+        { name: "Express.js", icon: <FaNodeJs /> },
         { name: "MongoDB", icon: <FaDatabase /> },
         { name: "PostgreSQL", icon: <FaDatabase /> },
-        { name: "Express.js", icon: <FaNodeJs /> },
+        { name: "Git", icon: <FaGit /> },
+        { name: "HTML", icon: <FaHtml5 /> },
+        { name: "CSS", icon: <FaCss3 /> },
         { name: "Redux Toolkit", icon: <FaReact /> },
         { name: "RTK Query", icon: <FaReact /> },
         { name: "AWS", icon: <FaAws /> },
         { name: "Cloudinary", icon: <FaCloud /> },
-        { name: "Git", icon: <FaGit /> },
         { name: "OAuth", icon: <FaLock /> },
         { name: "Docker", icon: <FaDocker /> },
         { name: "Postman", icon: <FaPaperPlane /> },
@@ -44,7 +47,9 @@ const Skills: React.FC = () => {
 
   return (
     <div
-      className={`p-8 min-h-screen ${isDarkMode ? 'bg-black text-white' : 'bg-white text-black'}`}
+      className={`p-8 min-h-screen ${
+        isDarkMode ? "bg-black text-white" : "bg-white text-black"
+      }`}
     >
       <Navbar />
       <h1 className="text-3xl font-bold text-center mb-8">Skills</h1>
@@ -58,7 +63,11 @@ const Skills: React.FC = () => {
               {skillCategory.items.map((skill, idx) => (
                 <div
                   key={idx}
-                  className={`py-2 px-6 rounded-full text-center border transition duration-300 ${isDarkMode ? 'bg-black text-white border-white hover:bg-white hover:text-black' : 'bg-white text-black border-black hover:bg-black hover:text-white'}`}
+                  className={`py-2 px-6 rounded-full text-center border transition duration-300 ${
+                    isDarkMode
+                      ? "bg-black text-white border-white hover:bg-white hover:text-black"
+                      : "bg-white text-black border-black hover:bg-black hover:text-white"
+                  }`}
                 >
                   <div className="flex items-center gap-2">
                     {skill.icon}
@@ -75,4 +84,3 @@ const Skills: React.FC = () => {
 };
 
 export default Skills;
-
