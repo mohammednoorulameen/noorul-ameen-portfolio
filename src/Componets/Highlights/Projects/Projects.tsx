@@ -38,7 +38,7 @@ const Projects: React.FC = () => {
       id: 4,
       title: "netflix clone",
       description: "React netflix clone  ",
-      liveLink: "https://netflix-clone-pcermdq85-mohammednoorulameens-projects.vercel.app/",
+      liveLink: "netflix-clone-git-main-mohammednoorulameens-projects.vercel.app",
       sourceCode: "https://github.com/mohammednoorulameen/netflix-clone",
       smallImage: `${netflix}`, // Add small image URL
     },
