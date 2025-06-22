@@ -3,6 +3,7 @@ import Navbar from "../../Navbar/Navbar";
 import Ebook from '../../../assets/E-Book.png';
 import toyotaclone from '../../../assets/toyota clone.jpeg';
 import Allensonly_clone from '../../../assets/Allensonly_clone.png'
+import netflix from '../../../assets/Allensonly_clone.png'
 import { useTheme } from '../../../Context/ThemeContext';
 
 const Projects: React.FC = () => {
@@ -32,6 +33,14 @@ const Projects: React.FC = () => {
       liveLink: "https://mohammednoorulameen.github.io/Allensolly/",
       sourceCode: "https://github.com/mohammednoorulameen/Allensolly",
       smallImage: `${Allensonly_clone}`, // Add small image URL
+    },
+     {
+      id: 3,
+      title: "netflix clone",
+      description: "React ",
+      liveLink: "https://netflix-clone-pcermdq85-mohammednoorulameens-projects.vercel.app/",
+      sourceCode: "https://github.com/mohammednoorulameen/netflix-clone",
+      smallImage: `${netflix}`, // Add small image URL
     },
   ];
 
