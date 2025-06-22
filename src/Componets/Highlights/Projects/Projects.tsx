@@ -3,7 +3,7 @@ import Navbar from "../../Navbar/Navbar";
 import Ebook from '../../../assets/E-Book.png';
 import toyotaclone from '../../../assets/toyota clone.jpeg';
 import Allensonly_clone from '../../../assets/Allensonly_clone.png'
-import netflix from '../../../assets/Allensonly_clone.png'
+import netflix from '../../../assets/netflix.png'
 import { useTheme } from '../../../Context/ThemeContext';
 
 const Projects: React.FC = () => {
@@ -37,7 +37,7 @@ const Projects: React.FC = () => {
      {
       id: 3,
       title: "netflix clone",
-      description: "React ",
+      description: "React netflix clone  ",
       liveLink: "https://netflix-clone-pcermdq85-mohammednoorulameens-projects.vercel.app/",
       sourceCode: "https://github.com/mohammednoorulameen/netflix-clone",
       smallImage: `${netflix}`, // Add small image URL
