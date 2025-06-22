@@ -35,7 +35,7 @@ const Projects: React.FC = () => {
       smallImage: `${Allensonly_clone}`, // Add small image URL
     },
      {
-      id: 3,
+      id: 4,
       title: "netflix clone",
       description: "React netflix clone  ",
       liveLink: "https://netflix-clone-pcermdq85-mohammednoorulameens-projects.vercel.app/",
