@@ -3,6 +3,7 @@ import Navbar from "../../Navbar/Navbar";
 import Ebook from '../../../assets/E-Book.png';
 import toyotaclone from '../../../assets/toyota clone.jpeg';
 import Allensonly_clone from '../../../assets/Allensonly_clone.png'
+import kaf from '../../../assets/kaf.png'
 import netflix from '../../../assets/netflix.png'
 import { useTheme } from '../../../Context/ThemeContext';
 
@@ -12,6 +13,14 @@ const Projects: React.FC = () => {
   const projects = [
     {
       id: 1,
+      title: "Kaf(Kokkachal wafy college) Program Handle Website",
+      description: "A full-stack MERN application for handling program results.",
+      liveLink: "https://kokkachal-wafy-college-client.vercel.app/",
+      sourceCode: "https://github.com/mohammednoorulameen/kokkachal-Wafy-college-client.git",
+      smallImage: `${kaf}`, 
+    },
+    {
+      id: 2,
       title: "E-book E-Commerce Website",
       description: "A full-stack MERN application for buying and selling products.",
       liveLink: "https://ebooks.noorulameen.tech/",
@@ -19,7 +28,7 @@ const Projects: React.FC = () => {
       smallImage: `${Ebook}`, 
     },
     {
-      id: 2,
+      id: 3,
       title: "UI design a Website",
       description: "UI-UX design ",
       liveLink: "https://mohammednoorulameen.github.io/tayota-responsive/",
@@ -27,7 +36,7 @@ const Projects: React.FC = () => {
       smallImage: `${toyotaclone}`, // Add small image URL
     },
     {
-      id: 3,
+      id: 4,
       title: "UI design a Website",
       description: "UI-UX design ",
       liveLink: "https://mohammednoorulameen.github.io/Allensolly/",
@@ -35,7 +44,7 @@ const Projects: React.FC = () => {
       smallImage: `${Allensonly_clone}`, // Add small image URL
     },
      {
-      id: 4,
+      id: 5,
       title: "netflix clone",
       description: "React netflix clone  ",
       liveLink: "https://netflix-clone-seven-vert-45.vercel.app/",
